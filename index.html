@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;600;700&display=swap" rel="stylesheet">
+    <link href = "Styles.css" rel = "stylesheet" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>M.Vos Homepage</title>
+
+</head>
+
+<body>
+
+    <section class="header">
+        <nav>
+            <a href="index.html"><img class="homebutton"src="images/voslogo.png" alt="Terug naar homepage"></a>
+            <div class="nav-links" id="navlinks">
+                <i class="fa fa-times" onclick="hidemenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="overmij">Over mij</a></li>
+                    <li><a href="portfolio.html">Portfolio & CV</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showmenu()"></i>
+        </nav>
+
+        <div class="text-box">
+            <h1>Welkom om mijn site</h1>
+
+            <p>Ik maak hier verschillende content om mijn programeer skills te ontwikkelen.<br>Ik probeer wekelijks op maandag verandering aan te brengen
+            </p>
+
+            <a href="" class="hero-btn">Check hier de laatste veranderingen</a>
+        </div>
+        
+    </section>
+
+ <!-- Talen -->
+
+    <section class="taleninfo">
+        <h1>Talen</h1>
+        <p>Alle programeer talen waar ik mee bezig ben</p>
+
+
+        <div class="talen">
+            <div class="protaal">
+                <img src="images/html.svg" alt="HTML">
+                <h3>HTML</h3>
+                <p>HyperText Markup Language (afgekort HTML) is een op SGML gebaseerde opmaaktaal voor de specificatie van documenten, voornamelijk bedoeld voor het wereldwijde web. Het is de standaard opmaaktaal voor webpagina's.</p>
+            </div>
+
+            <div class="protaal">
+                <img src="images/css.png"  alt="CSS">
+                <h3>CSS</h3>
+                <p>Css bied mogelijkheid om de vormgeving van webpagina's los te koppelen van hun feitelijke inhoud en centraal vast te leggen. Het begrip "cascading" (als een waterval) verwijst naar de mogelijkheid van het overerven van opmaak-eigenschappen.</p>
+            </div>
+
+            <div class="protaal">
+                <img src="images/js.png" alt="js">
+                <h3>Javascript</h3>
+                <p>Veel Internet websites bevatten JavaScript, een programmeertaal voor scripts die wordt uitgevoerd in de webbrowser om specifieke functies op de webpagina functioneel te maken.</p>
+            </div>
+        </div>
+    </section>
+
+   <!--Over mij-->
+
+    <section class="overmij">
+        <h4>Over mij</h4>
+
+        <p>Toen ik 10 jaar was wist ik het zeker ik wilde chef-kok worden. Op mijn 12de was het dan zo ver ik kon eindelijk naar de koksschool.
+            vol enthousiasme ging ik naar het Zadkine om daar de opleiding VMBO horeca en toerisme te volgen.</p>
+        <br>
+        <p>Toch bleek na 7 jaar naar school gaan dat ik het meer naar mijn zin had op de stage's die ik had of de parttime baantjes waar ik werkte.
+            En dus besloot ik er na 7 school mee te stoppen en full-time aan de slag te gaan in de Rotterdamse horeca.
+            Ik zou het sneller leren maar vooral ook de kennis opdoen waar ik verder mee zou komen dan de stof op school die verjaard was ik vergelijking met de praktijk. </p>
+        <br>
+        <p>En nu in totaal 16 jaar later besluit ik het roer om te gooien en me te wagen in de wereld van software development. </p>
+        <br>
+        <p> Ik ben namelijk sinds 17 mei 2021 begonnen met mijn opleiding tot full stack developer bij <a href="https://www.novi.nl/" target="_blank" class="novi"> Hogeschool Novi</a> in Utrecht </p>
+
+    </section>
+
+    <!--mail/contact-->
+
+    <section class="cta">
+        <h1>Neem contact op en<BR>stuur een mail!</h1>
+        <a href="contact.html" class="hero-btn">Contact</a>
+    </section>
+
+    <!--Footer!-->
+
+    <section class="links">
+        <h4>Links en overig</h4>
+        <p>Vind hier links naar mijn Github of andere media kanalen</p>
+
+        <div class="icons">
+            <a href="https://www.linkedin.com/in/mitchell-vos-a1380a189/" target="_blank" class="fa fa-linkedin"></a>
+            <a href="https://github.com/mitvoss" target="_blank" class="fa fa-github"></a>
+            <a href="https://www.facebook.com/mitchell.vos.9" target="_blank" class="fa fa-facebook"></a>
+        </div>
+        <p>Gemaakt met <i class="fa fa-heart-o"></i> door M.Vos</p>
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Javascript voor menu toggle-->
+    <script>
+
+        var navLinks = document.getElementById('lavlinks');
+
+        function showmenu(){
+            navlinks.style.right = "0";
+        }
+        function hidemenu(){
+            navlinks.style.right = "-200px";
+        }
+    </script>
+
+
+
+</body>
+</html>
