@@ -1,10 +1,148 @@
 <!DOCTYPE html>
-<html lang="NL">
+<html lang="nl">
 <head>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;600;700&display=swap" rel="stylesheet">
+    <link href = "Styles.css" rel = "stylesheet" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
     <meta charset="UTF-8">
-    <title>M.Vos contact</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact</title>
+
 </head>
+
 <body>
+
+    <section class="header">
+        <nav>
+            <a href="index.html"><img class="homebutton" src="images/voslogo.png" alt="Terug naar homepage"></a>
+            <div class="nav-links" id="navlinks">
+                <i class="fa fa-times" onclick="hidemenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="https://www.mitvos.nl./index.html#overmij">Over mij</a></li>
+                    <li><a href="portfolio.html">Portfolio & CV</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showmenu()"></i>
+        </nav>
+
+        <div class="text-box">
+            <h1>Contact</h1>
+        </div>
+    </section>
+
+    <section class="locatie">
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2460.685322294964!2d4.491766315942497!3d51.92145208816517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c433445f6f1f8f%3A0x479aa1a128ac8cba!2sBurgemeester%20van%20
+        Walsumweg%2C%20Rotterdam!5e0!3m2!1snl!2snl!4v1622503746683!5m2!1snl!2snl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+        </iframe>
+
+    </section>
+
+    <section class="contactmij">
+
+        <div class="row">
+            <div class="form">
+                <div>
+                    <i class="fa fa-home"></i>
+                    <span>
+                        <h5>Burgemeester van walsumweg 16, Rotterdam</h5>
+                        <p>3011MZ, Zuid-holland, Nederland</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <span>
+                        <h5>+31 6 20369460</h5>
+                        <p>Maandan tot vrijdag 09:00 t/m 20:00</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-envelope-o"></i>
+                    <span>
+                        <h5>Mitchellvos93@gmail.com</h5>
+                        <p>Mitchell.Vos@novi-education.nl</p>
+                    </span>
+                </div>
+                <div class="form">
+
+                    <form action="">
+                        <input type="text" placeholder="Volledige naam" required>
+                        <input type="email" placeholder="Email" required>
+                        <input type="text" placeholder="Onderwerp" required>
+                        <texterea rows="8" placeholder="Boodschap" required></texterea>
+                        <button type="submit" class="hero-btn">Verzend</button>
+                    </form>
+            
+                </div>
+            </div>
+        </div>
+
+
+
+    </section>
+
+
+
+
+    <!--Footer!-->
+
+    <section class="links">
+        <h4>Links en overig</h4>
+        <p>Links naar mijn Github etc</p>
+
+        <div class="icons">
+            <a href="https://www.linkedin.com/in/mitchell-vos-a1380a189/" target="_blank" class="fa fa-linkedin"></a>
+            <a href="https://github.com/mitvoss" target="_blank" class="fa fa-github"></a>
+            <a href="https://www.facebook.com/mitchell.vos.9" target="_blank" class="fa fa-facebook"></a>
+        </div>
+        <p>Gemaakt met <i class="fa fa-heart-o"></i> door M.Vos</p>
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Javascript voor menu toggle-->
+    <script>
+
+        var navLinks = document.getElementById('lavlinks');
+
+        function showmenu(){
+            navlinks.style.right = "0";
+        }
+        function hidemenu(){
+            navlinks.style.right = "-200px";
+        }
+    </script>
+
+
 
 </body>
 </html>

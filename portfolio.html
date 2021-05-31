@@ -1,10 +1,164 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;600;700&display=swap" rel="stylesheet">
+    <link href = "Styles.css" rel = "stylesheet" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>M.Vos Portfolio</title>
+
 </head>
+
 <body>
+<!--   header    -->
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img class="homebutton" src="images/voslogo.png" alt="Terug naar homepage"></a>
+            <div class="nav-links" id="navlinks">
+                <i class="fa fa-times" onclick="hidemenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="overmij">Over mij</a></li>
+                    <li><a href="portfolio.html">Portfolio & CV</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showmenu()"></i>
+        </nav>
+
+        <div class="text-box">
+            <h1>Mitchell Vos</h1>
+
+            <p>Betrokken, Fanatiek, Innoverend</p>
+
+            <a href="https://github.com/mitvoss" class="hero-btn">Koekeloer even door mijn Github</a>
+        </div>
+        
+    </section>
+
+    <!--Portfolio en cv-->
+
+    <section class="introsec">
+
+        <div class="roww">
+            <div class="intro text">
+                <h1>Een startende software / web developer</h1> <br>
+                <p>Mijn naam is Mitchell Vos. Geboren in Rotterdam opgegroeid in Rotterdam en Berkel en Rodenrijs. Nu alweer 3 jaar woonachtig is Rotterdam samen met mijn vriendin Laura.
+
+                    <br>
+                    </br>
+                    Ik heb een lichte obsessie voor (natuur) wijnen en bieren en ben gek op muziek. van A tot Z en van digitaal tot sinds kort vinyl(ik kon er niet aan ontkomen).
+                    Ook ben ik graag met creatieve dingen bezig en dat heeft er voor gezorgd dat ik zo vroeg de horeca in ben gerold.
+
+                    <br>
+                    </br>
+                    En is dat nu de reden dat ik verder ga als software developer. Na 2 jaar af en aan wat kleine simpele projecten te hebben gedaan thuis heb ik de stap gezet er nu vol voor te gaan.
+                    Ik vind het werken in CSS en Javascript om die reden dan ook geweldig.
+
+                    <br>
+                    </br>
+
+                    Ik zie software / web development dan ook als een oneindig schilderij waarvan de verf nooit droog kan worden en je met de druk op de knop een schoon canvas hebt.</p>
+            </div>
+            <div class="intro">
+                <img src="images/unnamed.png" alt="profielfoto Mitchell">
+            </div>
+        </div>
+
+    </section>
+
+<!-- deel CV -->
+
+
+<section class="taleninfo">
+    <h1>CV</h1>
+    <p>Een paar oud werkgevers</p>
+
+
+    <div class="talen">
+        <div class="protaal">
+            <img src="images/sligro.png" alt="Sligro">
+            <h3><a href="https://www.sligro.nl/home.html" target="_blank">Sligro Food Group</a></h3>
+            <p>Culinair Adviseur, Horeca groothandel, 09/2020 - 05/2021. </p>
+        </div>
+
+        <div class="protaal">
+            <img src="images/dejong.png"  alt="Restaurant de Jong">
+            <h3><a href="https://restaurantdejong.nl/" target="_blank">De Jong</a></h3>
+            <p>Senior sous-chef, Culinaire Bistronomie, 08/2018 - 01/2020 </p>
+        </div>
+
+        <div class="protaal">
+            <img src="images/rotown.png" alt="Rotown">
+            <h3><a href="https://www.rotown.nl/" target="_blank">Rotown</a></h3>
+            <p>Sous-chef, Restaurant / Pop-podium, 03/2013 - 10/2015</p>
+        </div>
+    </div>
+</section>
+
+<!-- skills -->
+
+<section class="taleninfo">
+    <h1>Skills</h1>
+    <p>Programeer talen </p>
+
+
+    <div class="talen">
+        <div class="protaal">
+            <img src="images/html.svg" alt="HTML">
+            <h3>HTML</h3>
+            <p>HyperText Markup Language (afgekort HTML) is een op SGML gebaseerde opmaaktaal voor de specificatie van documenten, voornamelijk bedoeld voor het wereldwijde web. Het is de standaard opmaaktaal voor webpagina's.</p>
+        </div>
+
+        <div class="protaal">
+            <img src="images/css.png"  alt="CSS">
+            <h3>CSS</h3>
+            <p>Css bied mogelijkheid om de vormgeving van webpagina's los te koppelen van hun feitelijke inhoud en centraal vast te leggen. Het begrip "cascading" (als een waterval) verwijst naar de mogelijkheid van het overerven van opmaak-eigenschappen.</p>
+        </div>
+
+        <div class="protaal">
+            <img src="images/js.png" alt="js">
+            <h3>Javascript</h3>
+            <p>Veel Internet websites bevatten JavaScript, een programmeertaal voor scripts die wordt uitgevoerd in de webbrowser om specifieke functies op de webpagina functioneel te maken.</p>
+        </div>
+    </div>
+</section>
+
+
+<section class="links">
+        <h4>Links en overig</h4>
+        <p>Links naar mijn Github etc</p>
+
+        <div class="icons">
+            <a href="https://www.linkedin.com/in/mitchell-vos-a1380a189/" target="_blank" class="fa fa-linkedin"></a>
+            <a href="https://github.com/mitvoss" target="_blank" class="fa fa-github"></a>
+            <a href="https://www.facebook.com/mitchell.vos.9" target="_blank" class="fa fa-facebook"></a>
+        </div>
+        <p>Gemaakt met <i class="fa fa-heart-o"></i> door M.Vos</p>
+
+
+    </section>
+
+
+    <!-- Javascript voor menu toggle-->
+    <script>
+
+        var navLinks = document.getElementById('lavlinks');
+
+        function showmenu(){
+            navlinks.style.right = "0";
+        }
+        function hidemenu(){
+            navlinks.style.right = "-200px";
+        }
+    </script>
+
+
 
 </body>
 </html>
